@@ -23,10 +23,12 @@ var config = {
         {
           type: 'Countdown.date',
           from: '2016-04-22',
-          title: 'Countdown!', 
+          title: 'Countdown!',
+          header: 'Still',
+          footer: 'days until...', 
           value: '58',            // See widget documentation
           unit: 'days', 
-          columns: 1, rows: 1,    // Size 
+          columns: 3, rows: 2,    // Size 
           x: 0, y: 0              // Position 
         }
       ]
