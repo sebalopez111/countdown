@@ -13,6 +13,7 @@ EXPOSE 5100
 
 ### ENV variables
 ENV PATH /opt/node/bin:$PATH
+RUN PATH="/opt/node/bin:$PATH"
 
 ### Set Entry Point
-ENTRYPOINT ["node app.js"]
+#ENTRYPOINT ["env && node app.js"]
