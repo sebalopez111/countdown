@@ -16,4 +16,4 @@ ENV PATH /opt/node/bin:$PATH
 RUN PATH="/opt/node/bin:$PATH"
 
 ### Set Entry Point
-#ENTRYPOINT ["env && node app.js"]
+CMD /bin/bash
