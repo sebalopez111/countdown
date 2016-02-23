@@ -17,6 +17,7 @@ EXPOSE 5100
 ### ENV variables
 ENV PATH /opt/node/bin:$PATH
 RUN PATH="/opt/node/bin:$PATH"
+RUN npm install
 
 ### Set Entry Point
-CMD npm install && node app.js
+CMD node app.js
