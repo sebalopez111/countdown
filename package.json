@@ -1,0 +1,16 @@
+{
+  "name": "mozaik-Countdown-dashboard",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Mozaïk Countdown dashboard",
+  "dependencies": {
+    "babel": "^5.8.12",
+    "babelify": "^7.2.0",
+    "dotenv": "^0.5.1",
+    "gulp": "^3.9.0",
+    "lodash": "^3.10.0",
+    "moment": "^2.11.2",
+    "mozaik": "*",
+    "react": "^0.13.3"
+  }
+}
