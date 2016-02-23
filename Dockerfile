@@ -11,5 +11,8 @@ WORKDIR /opt/countdown
 ### Expose ports used by the application
 EXPOSE 5100
 
+### ENV variables
+ENV PATH /opt/node/bin:$PATH
+
 ### Set Entry Point
 ENTRYPOINT ["node app.js"]
