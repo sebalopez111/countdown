@@ -9,7 +9,7 @@ COPY ./* /opt/countdown/
 WORKDIR /opt/countdown
 
 ### Expose ports used by the application
-EXPOSE 8080
+EXPOSE 5100
 
 ### Set Entry Point
 ENTRYPOINT ["node app.js"]
