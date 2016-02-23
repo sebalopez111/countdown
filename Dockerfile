@@ -7,6 +7,7 @@ VOLUME /var
 COPY build /opt/countdown/build
 COPY src /opt/countdown/src
 COPY app.js /opt/countdown
+COPY config.js /opt/countdown
 COPY package.json /opt/countdown
 
 WORKDIR /opt/countdown
