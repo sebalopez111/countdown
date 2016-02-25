@@ -7,7 +7,7 @@ var config = {
   host: '0.0.0.0',
   port: process.env.PORT || 5100,
 
-  theme: 'night-blue',
+  theme: 'night-blue-countdown',
 
   // clients configs
   api: {
@@ -22,7 +22,7 @@ var config = {
       widgets: [
         {
           type: 'Countdown.date',
-          from: '2016-04-22',
+          from: '2016-04-22T18:00:00-3',
           title: 'Countdown!',
           header: 'Still',
           footer: 'days until...', 

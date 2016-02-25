@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
 import moment               from 'moment';
 
+
+function tminus(from) {
+  var totalSeconds = moment(from).diff(moment.now()) / 1000;
+  
+  var days    = Math.floor(totalSeconds / 3600 / 24 );
+  totalSeconds = totalSeconds - (days * 24 * 3600); 
+  var hours   = Math.floor(totalSeconds / 3600 );
+  var minutes = Math.floor(totalSeconds % 3600 / 60);
+
+  return [days, hours, minutes].join(':');
+}
+
 function getState(from) {
-  return { value : moment(from).diff(moment.now(), 'days') };
+  return { value : tminus(from) };
 }
 
 var CountdownDate = React.createClass({
@@ -40,9 +52,8 @@ var CountdownDate = React.createClass({
     
     var header = React.createElement('div', { className: 'widget__header' }, this.props.title);
     var content = React.createElement('div', null,
-      React.createElement('div',  { style: headerStyles }, this.props.header),
-      React.createElement('h1', { style: valueStyles }, this.state.value),
-      React.createElement('div',  { style: footerStyles }, this.props.footer));
+      React.createElement('h1', { className: 'digital', style: valueStyles }, this.state.value),
+    );
       
     return React.createElement('div', null, 
       header, 

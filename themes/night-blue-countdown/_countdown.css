@@ -1,0 +1,9 @@
+@font-face {
+  font-family: digital;
+  src: url(../fonts/digital7.ttf);
+  font-weight: bold;
+}
+
+.digital {
+  font-family: digital;
+}
