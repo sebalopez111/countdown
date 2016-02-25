@@ -26,7 +26,6 @@ var config = {
           title: 'Countdown!',
           header: 'Still',
           footer: 'days until...', 
-          value: '58',            // See widget documentation
           unit: 'days', 
           columns: 3, rows: 2,    // Size 
           x: 0, y: 0              // Position 
