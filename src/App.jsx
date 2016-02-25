@@ -5,9 +5,11 @@ const MozaikComponent = Mozaik.Component.Mozaik;
 const ConfigActions   = Mozaik.Actions.Config;
 
 // Mozaik.Registry.addExtension('image', require('mozaik-ext-image'));
-// Mozaik.Registry.addExtension('time', require('mozaik-ext-time'));
-// Mozaik.Registry.addExtension('weather', require('mozaik-ext-weather'));
+Mozaik.Registry.addExtension('time', require('mozaik-ext-time'));
+Mozaik.Registry.addExtension('weather', require('mozaik-ext-weather'));
 Mozaik.Registry.addExtension('Countdown', require('./components/mozaik-ext-countdown/Countdown.js'));
+Mozaik.Registry.addExtension('image', require('mozaik-ext-image'));
+Mozaik.Registry.addExtension('Stock', require('./components/stock/Stock.js'));
 
 React.render(<MozaikComponent />, document.getElementById('mozaik'));
 
