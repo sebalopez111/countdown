@@ -52,7 +52,7 @@ var CountdownDate = React.createClass({
     
     var header = React.createElement('div', { className: 'widget__header' }, this.props.title);
     var content = React.createElement('div', null,
-      React.createElement('h1', { className: 'digital', style: valueStyles }, this.state.value),
+      React.createElement('h1', { className: 'digital', style: valueStyles }, this.state.value)
     );
       
     return React.createElement('div', null, 
