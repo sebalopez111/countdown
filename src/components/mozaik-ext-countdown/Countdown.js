@@ -10,7 +10,12 @@ function tminus(from) {
   var hours   = Math.floor(totalSeconds / 3600 );
   var minutes = Math.floor(totalSeconds % 3600 / 60);
 
-  return [days, hours, minutes].join(':');
+  return [days, pad(hours, 2), pad(minutes, 2)].join(":");
+}
+
+function pad(num, places) {
+  var zero = places - num.toString().length + 1;
+  return Array(+(zero > 0 && zero)).join("0") + num;
 }
 
 function getState(from) {
