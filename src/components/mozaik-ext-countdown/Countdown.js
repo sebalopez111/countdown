@@ -37,21 +37,8 @@ var CountdownDate = React.createClass({
   },
   
   render: function() {
-    var headerStyles = {
-      'font-size': '2.5rem',
-      'text-align': 'center',
-      'margin-left': '-18rem',
-      'margin-top': '20px'
-    };
-    
-    var footerStyles = {
-      'font-size': '3rem',
-      'text-align': 'center',
-      'margin-left': '15rem'
-    };
-    
     var valueStyles = {
-      'font-size': '10rem',
+      'font-size': '20rem',
       'text-align': 'center'
     };
     
