@@ -11,6 +11,7 @@
     "lodash": "^3.10.0",
     "moment": "^2.11.2",
     "mozaik": "*",
+    "mozaik-ext-image": "^0.3.0",
     "mozaik-ext-time": "^1.0.2",
     "mozaik-ext-weather": "^1.1.0",
     "react": "^0.13.3"
