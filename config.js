@@ -49,7 +49,7 @@ var config = {
             country: 'US',
             lang:    'es',
             limit:   3,
-            columns: 1, rows: 1, x: 0, y: 1
+            columns: 1, rows: 1, x: 1, y: 1
         },
         
         {
