@@ -44,15 +44,18 @@ var config = {
         },
               
         {
-          type: 'time.clock',
-          info: 'timezone',
-          columns: 1, rows: 1, x: 1, y: 1
+            type:    'weather.weather',
+            city:    'Lowell',
+            country: 'US',
+            lang:    'es',
+            limit:   3,
+            columns: 1, rows: 1, x: 0, y: 1
         },
         
         {
           type: 'image.image',
           title: 'ARRS',
-          url: 'https://www.google.com/finance/getchart?q=ARRS&p=3d&i=100',
+          url: 'https://www.google.com/finance/getchart?q=ARRS&p=30d&i=100',
           backgroundSize: 'cover',
           refreshInterval: 60,
           columns: 1, rows: 1,
