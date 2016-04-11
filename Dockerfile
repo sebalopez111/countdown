@@ -1,4 +1,4 @@
-FROM 10.116.81.31:5000/ndvr_stable/alpine-node-3.2:latest
+FROM 10.13.193.94:5000/ndvr_stable/alpine-node-3.2:latest
 
 ### Mount points
 VOLUME /var
